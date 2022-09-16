@@ -32,5 +32,6 @@ const Header = (props) => {
 export default Header
 
 Header.prototype = {
-    title: PropTypes.string
+    title: PropTypes.string,
+    showSearchBar: PropTypes.bool.isRequired
 }
