@@ -17,9 +17,10 @@ function App() {
 
   }
 
-
   const addTodo = (title, desc) => {
-    setTodos([...todos,{srno:4,title:title,description:desc}])
+    const srno = todos.length + 1
+    setTodos([...todos,{srno:srno,title:title,description:desc}])
+    console.log(todos)
   }
 
   let [todos,setTodos] = useState([

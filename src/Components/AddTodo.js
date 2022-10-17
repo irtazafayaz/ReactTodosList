@@ -18,14 +18,14 @@ const AddTodo = (props) => {
             <h3>Add Todo</h3>
             <form onSubmit={submit} >
                 <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Email address</label>
+                    <label htmlFor="title" className="form-label">Todo Title</label>
                     <input type="title" className="form-control" value={title} onChange = {(e) => {setTitle(e.target.value)}} id="title" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="desc" className="form-label">Password</label>
+                    <label htmlFor="desc" className="form-label">Description</label>
                     <input type="password" className="form-control" id="desc" value={desc} onChange = {(e) => {setDesc(e.target.value)}} />
                 </div>
-                <button type="submit" className="btn btn-sm btn-success">Submit</button>
+                <button type="submit" className="btn btn-sm btn-success">Save Todo</button>
             </form>
         </div>
     )
